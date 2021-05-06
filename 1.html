@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대연령에 관한 웹</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url('space.jpg');
+
+        }
+        body div {
+            font-size: 15px;
+            line-height: 1.8;
+            position: absolute;
+            float: left;
+            width: 100%;
+            margin-top: 10%;
+            padding-top: 7vw;
+            padding-bottom: 8vw;
+            background-color:rgba(0, 0, 0, 0.7)        
+        }
+        .ColorAndFont {
+            color: rgba(179, 181, 182, 0.8);
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ColorAndFont">
+        <p>
+            <h2>절대연령</h2>
+            <article>암석의 생성 시기나 지질학적 사건의 발생 시기를 수치로 나타낸 것</article>
+        </p>
+        <p>
+            <h2>방사성 동위 원소</h2>
+            <article>시간이 지남에 따라 방사선을 방출하면서 일정한 속도로 붕괴하여 안정한 원소로 변한다</article>
+            <strong>모원소 : 붕괴하는 원래의 방사성 동위 원소</strong><br>
+            <strong>자원소 : 모원소가 붕괴하여 새로 생성된 안정한 원소</strong>
+        </p>
+    </div>
+    <input type="button" value="space" onclick="
+        document.querySelector('div').style.width = '0'
+        document.querySelector('div').style.fontSize = '0'
+    ">
+    <input type="button" value="document" onclick="
+    document.querySelector('div').style.width = '100%'
+    document.querySelector('div').style.fontSize = '15px'
+">
+</body>
+</html>
